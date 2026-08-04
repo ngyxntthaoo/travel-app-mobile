@@ -607,8 +607,7 @@ class _TripRouteMapScreenState extends State<TripRouteMapScreen> {
   // ─────────────────────────────── Shared bits ──────────────────────────────
 
   TileLayer _tileLayer() => TileLayer(
-        urlTemplate: 'https://api.mapbox.com/styles/v1/mapbox/streets-v12/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoidGhuaHRoYW8iLCJhIjoiY21zMTV1aGRoMDBhZzJ4b2gwOGp2djd1cCJ9.FAfa4g8ZP_B0MrBcLA1mLw',
-        // subdomains: const ['a', 'b', 'c', 'd'],
+        urlTemplate: MapboxService.streetsTileUrl,
         userAgentPackageName: 'com.example.trip_planner',
       );
 
